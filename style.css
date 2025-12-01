@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #1a1a1a;
+}
+
+header {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dce2e8;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p{
+    margin: 0.4rem 0 0;
+    color: #555
+}
+
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1.1fr 1.4fr;
+    gap: 1.5rem;
+    padding: 0 1rem;
+}
+
+section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #e1e4eb;
+  padding: 1.2rem;
+}
+
+section h2 {
+  margin-top: 0;
+  color: #2b6cb0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+input, textarea {
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccd3dd;
+  font-family: inherit;
+  font-size: 0.95rem;
+}
+
+.error-msg {
+  color: #d93025;
+  font-size: 0.85rem;
+  margin-top: -0.4rem;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+
+.input-error {
+  border-color: #d93025 !important;
+  background-color: #ffecec;
+}
+
+button {
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  border: none;
+  background-color: #2b6cb0;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #234a86;
+}
+
+#task-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+  color: #555;
+  background-color: #ffffff;
+  border-top: 1px solid #dce2e8;
+}
+
+.task-item {
+  border-bottom: 1px solid #e1e4eb;
+  padding: 0.7rem 0;
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-title {
+  font-weight: 600;
+}
+
+.task-desc {
+  margin: 0.4rem 0 0.3rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.task-actions {
+  display: flex;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.task-actions button {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
