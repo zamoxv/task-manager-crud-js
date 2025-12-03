@@ -13,7 +13,7 @@
   </header>
   <main class="container">
     <section class="form-section">
-      <h2>Nueva tarea</h2>
+      <h2 id="form-title">Nueva tarea</h2>
       <form id="task-form" novalidate>
         <input 
             type="text"
@@ -23,11 +23,14 @@
         <small id="title-error" class="error-msg"></small>
 
         <textarea 
-            placeholder="Descripción (Opcional)" 
             id="task-desc"
+            placeholder="Descripción (Opcional)"
             rows="3"
         ></textarea>
-        <button type="submit">Guardar tarea</button>
+        <button type="submit" id="submit-btn">Guardar tarea</button>
+        <button type="button" id="cancel-btn" class="cancel-btn" style="display:none;">
+        Cancelar edición
+        </button>
       </form>
     </section>
 

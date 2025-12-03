@@ -87,6 +87,16 @@ button:hover {
   background-color: #234a86;
 }
 
+.cancel-btn {
+  margin-top: 0.4rem;
+  background-color: #ccc;
+  color: #333;
+}
+
+.cancel-btn:hover {
+  background-color: #b5b5b5;
+}
+
 #task-list {
   list-style: none;
   padding-left: 0;
